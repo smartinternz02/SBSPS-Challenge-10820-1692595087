@@ -1,0 +1,59 @@
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="test.js"></script>
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+	<form id="inputForm">
+		<div class="header">
+            <h1 class="headline"><b>Inference</b></h1>
+            <p class="subheadline">Upload an image to run inference on</p>
+
+		<div class="content">
+			<div class="content__grid">
+				<div class="col-12-s6-m4" id="method">
+					<label class="input__label">Upload Method</label>
+					<div>
+						<button data-value="upload" id="computerButton" class="bttn left fill active">Upload</button>
+						<button data-value="url" id="urlButton" class="bttn right fill">URL</button>
+					</div>
+				</div>
+
+				<div class="col-12-m8" id="fileSelectionContainer">
+					<label class="input__label" for="file">Select File</label>
+					<div class="flex">
+						<input class="input input--left flex-1" type="text" id="fileName" disabled />
+						<button id="fileMock" class="bttn right active">Browse</button>
+					</div>
+					<input style="display: none;" type="file" id="file" />
+				</div>
+
+				<div class="col-12-m8" id="urlContainer">
+					<label class="input__label" for="file">Enter Image URL</label>
+					<div class="flex">
+						<input type="text" id="url" placeholder="https://path.to/your.jpg" class="input"/><br>
+					</div>
+				</div>
+				<div class="col-6-m3" id="format">
+					<label class="input__label">Inference Result</label>
+					<div>
+						<button id="jsonButton" data-value="json" class="bttn right fill active">JSON</button>
+					</div>
+				</div>
+							<div class="col-12">
+					<button type="submit" value="Run Inference" class="bttn__primary">Run Inference</button>
+				</div>
+			</div>
+			<div class="result" id="resultContainer">
+				<div class="divider"></div>
+				<div class="result__header">
+					<h3 class="headline">Result</h3>
+					<a href="#">Copy Code</a>
+				</div>
+				<pre id="output" class="codeblock"> here is your json </pre>
+			</div>
+		</div>
+	</form>
+</body>

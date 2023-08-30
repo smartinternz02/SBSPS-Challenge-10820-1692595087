@@ -1,3 +1,4 @@
+
 // SIDEBAR TOGGLE
 
 var sidebarOpen = false;
@@ -70,13 +71,20 @@ barChart.render();
 
 // AREA CHART
 var areaChartOptions = {
-  series: [{
-    name: 'Cracks',
-    data: [31, 40, 28, 51, 42, 109, 100]
-  }, {
-    name: 'Dents',
-    data: [11, 32, 45, 32, 34, 52, 41]
-  }],
+  series: [
+    {
+      name: 'Cracks',
+      data: [31, 40, 38, 51, 42, 45, 50],
+    },
+    {
+      name: 'Dents',
+      data: [35, 32, 45, 32, 34, 52, 40],
+    },
+    {
+      name: 'Paint-off', // New variable
+      data: [5, 15, 8, 12, 10, 18, 19], // New data for Paint-off
+    },
+  ],
   chart: {
     height: 350,
     type: 'area',
@@ -84,16 +92,16 @@ var areaChartOptions = {
       show: false,
     },
   },
-  colors: ["#4f35a1", "#246dec"],
+  colors: ['#4f35a1', '#246dec', '#f5b74f'], // Added color for Paint-off
   dataLabels: {
     enabled: false,
   },
   stroke: {
-    curve: 'smooth'
+    curve: 'smooth',
   },
-  labels: ["ITR1", "ITR2", "ITR3", "ITR4", "ITR5", "ITR6", "ITR7"],
+  labels: ['ITR1', 'ITR2', 'ITR3', 'ITR4', 'ITR5', 'ITR6', 'ITR7'],
   markers: {
-    size: 0
+    size: 0,
   },
   yaxis: [
     {
@@ -111,8 +119,10 @@ var areaChartOptions = {
   tooltip: {
     shared: true,
     intersect: false,
-  }
+  },
 };
 
-var areaChart = new ApexCharts(document.querySelector("#area-chart"), areaChartOptions);
+var areaChart = new ApexCharts(document.querySelector('#area-chart'), areaChartOptions);
 areaChart.render();
+
+
