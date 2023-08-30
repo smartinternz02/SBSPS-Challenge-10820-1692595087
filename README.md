@@ -8,7 +8,6 @@ We also attempted to deploy the model on IBM Watson Studio but were unable to do
 Database integration, Security and Confidentiality of uploaded images and Report generation for repair is pending.
 
 # Pre-requisites:
-- !pip install flask
 - !pip install roboflow
 
 Dataset used: https://universe.roboflow.com/dibya-dillip/aircraft-skin-defects-classification-new-dataset/model/3
