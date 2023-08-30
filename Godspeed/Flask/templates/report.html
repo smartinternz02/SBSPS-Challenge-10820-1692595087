@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plane Skin Analysis Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .card h2 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        .prediction-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .prediction-item {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>Image Information</h2>
+            <p><strong>Time taken for analysis:</strong> 0.147 seconds</p>
+            <p><strong>Image dimensions:</strong> 178px x 191px</p>
+        </div>
+        <div class="card">
+            <h2>Predictions</h2>
+            <ul class="prediction-list">
+                <li class="prediction-item">
+                    <strong>Crack:</strong> Predicted with confidence of 98%
+                </li>
+                <li class="prediction-item">
+                    <strong>Dent:</strong> Predicted with confidence of 0.8%
+                </li>
+                <li class="prediction-item">
+                    <strong>Missing Head:</strong> Predicted with confidence of 1.1%
+                </li>
+                <li class="prediction-item">
+                    <strong>Paint Off:</strong> Predicted with confidence of 0.9%
+                </li>
+                <li class="prediction-item">
+                    <strong>Scratch:</strong> Predicted with confidence of 0.8%
+                </li>
+            </ul>
+            <p><strong>Predicted Class:</strong> Crack</p>
+        </div>
+    </div>
+</body>
+</html>
