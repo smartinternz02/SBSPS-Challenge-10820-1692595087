@@ -38,13 +38,17 @@
 				</div>
 				<div class="col-6-m3" id="format">
 					<label class="input__label">Inference Result</label>
-					<div>
-						<button id="jsonButton" data-value="json" class="bttn right fill active">JSON</button>
+					<div class="col-12">
+						<a href="report.html" class="" onclick="redirectToReport()">Run Inference</button>
 					</div>
+					<script>
+						function redirectToReport() {
+							window.location.href = "report.html";
+						}
+						</script>
 				</div>
-							<div class="col-12">
-					<button type="submit" value="Run Inference" class="bttn__primary">Run Inference</button>
-				</div>
+				
+									
 			</div>
 			<div class="result" id="resultContainer">
 				<div class="divider"></div>
@@ -52,7 +56,7 @@
 					<h3 class="headline">Result</h3>
 					<a href="#">Copy Code</a>
 				</div>
-				<pre id="output" class="codeblock"> here is your json </pre>
+				<pre id="output" class="codeblock"> . </pre>
 			</div>
 		</div>
 	</form>

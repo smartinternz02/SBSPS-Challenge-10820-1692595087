@@ -1,4 +1,4 @@
-$(function() {
+/*$(function() {
 	//values pulled from query string
 	$('#model').val("aircraft-skin-defects-classification-new-dataset");
 	$('#version').val("3");
@@ -187,3 +187,4 @@ var resizeImage = function(base64Str) {
 		};
 	});	
 };
+*/
