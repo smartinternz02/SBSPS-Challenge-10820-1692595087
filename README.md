@@ -1,4 +1,4 @@
-# Godspeed Aircraft Defect Detection
+# Team Godspeed-Aircraft Skin Health Diagnosis with Aircraft API
 
 AeroSpace is a web-application aims to provide a assistance to the aerospace industry to diagnos aircraft skin health. The model detect defects on the exterior of an aircraft, was trained on a Roboflow dataset using the YOLOv5 architecture.
 
