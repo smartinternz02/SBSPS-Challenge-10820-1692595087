@@ -17,3 +17,5 @@ Our future scope includes to deep dive into the cause of defect in more accuracy
 
 Dataset used: https://universe.roboflow.com/dibya-dillip/aircraft-skin-defects-classification-new-dataset/model/3
 
+Video Link: https://youtu.be/eogXJz_2UEw?feature=shared
+
